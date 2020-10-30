@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Speedometer">
+        <attr name="android:text" format="string"/>
+
+        <attr name="endValueScale" format="integer" />
+        <attr name="startPointerPosition" format="integer" />
+        <attr name="scaleDivisionStep" format="integer" />
+
+        <attr name="colorText" format="color" />
+        <attr name="colorScale" format="color" />
+        <attr name="colorBackgroundScale" format="color" />
+        <attr name="colorInnerBackground" format="color" />
+        <attr name="colorPointer" format="color" />
+    </declare-styleable>
+</resources>
