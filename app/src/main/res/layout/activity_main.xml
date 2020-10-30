@@ -16,7 +16,6 @@
         app:colorBackgroundScale="#484251"
         app:colorInnerBackground="#DDD270"
         app:colorPointer="#3F51B5"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

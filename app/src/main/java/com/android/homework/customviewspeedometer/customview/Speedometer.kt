@@ -225,6 +225,7 @@ class Speedometer @JvmOverloads constructor(
         canvas?.save()
         canvas?.translate(chosenWidth.toFloat() / 2, chosenHeight.toFloat())
         canvas?.scale(.5f * chosenWidth, -1f * chosenHeight)
+
         drawBorder(canvas)
         drawBackgroundScale(canvas)
         drawInnerBackground(canvas)
@@ -239,7 +240,7 @@ class Speedometer @JvmOverloads constructor(
         canvas?.save()
         canvas?.translate(chosenWidth.toFloat() / 2, chosenHeight.toFloat())
         canvas?.scale(.5f * chosenWidth, -1f * chosenHeight)
-        canvas?.rotate(90 - 180.toFloat() * (startPointerPosition / scaleEndValue))
+        canvas?.rotate(90 - 180.toFloat() * (startPointerPosition.toFloat() / scaleEndValue.toFloat()))
         drawPointer(canvas)
         canvas?.restore()
     }
