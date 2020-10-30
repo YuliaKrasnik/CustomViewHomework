@@ -184,6 +184,9 @@ class Speedometer @JvmOverloads constructor(
         if (state is Bundle) {
             startPointerPosition = state.getInt(STATE_KEY_START_POINTER_POSITION)
             pointerPaint.color = state.getInt(STATE_KEY_COLOR_POINTER)
+            if (pointerPaint.color != colorPointer) {
+                runAnimation(pointerPaint.color, colorPointer, startPointerPosition, scaleStartValue)
+            }
             superState = state.getParcelable(SUPER_STATE)
             invalidate()
         }
